@@ -14,13 +14,13 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
 
 // options to change the function
 
-function optionChanged(selectedID) {
-    buildChart(selectedID)
+function optionChanged(selectID) {
+    buildChart(selectID)
 }
 
 // Building bar chart
 
-let buildChart = (selectedID) => {
+let buildChart = (selectID) => {
     d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json").then((resp) => {
         console.log(resp)
         data = resp
@@ -36,7 +36,7 @@ let buildChart = (selectedID) => {
         }
         // setting variables for chart
 
-        var filteredData = data.samples.filter(row => row.id == selectedID)[0]
+        var filteredData = data.samples.filter(row => row.id == selectID)[0]
         let x = filteredData.sample_values.slice(0, 10).reverse()
         let y = filteredData.otu_ids.slice(0, 10).map(id => "OTU " + id).reverse()
         let hoverText = filteredData.otu_labels.slice(0, 10).reverse()
@@ -94,7 +94,7 @@ let buildChart = (selectedID) => {
 
         filteredData[0]
         
-        var metaData = resp.metadata[resp.names.indexOf(selectedID)]
+        var metaData = resp.metadata[resp.names.indexOf(selectID)]
 
         // selecting demographic info spot with d3
         let panel = d3.select("#sample-metadata")
