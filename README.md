@@ -2,7 +2,7 @@
 
 Biodiversity Dashboard
 
-As part of this project, I utilized a combination of JavaScript, HTML, and the D3 library to develop a dashboard that features interactive charts for exploring the Belly Button Biodiversity dataset. This dataset catalogs the various types of microbes that are found in human navels.
+As part of this project, I utilized a combination of JavaScript, HTML, and the D3 library to develop a dashboard that features interactive charts for exploring the Belly Button Biodiversity dataset. This dataset catalogs the various types of microbes that are found in human navels. Dashboard is here: https://stbere.github.io/belly-button-challenge/
 
 ![bb-dropdown_menu](https://user-images.githubusercontent.com/97980927/221448414-e85aea1d-bba1-4a6d-a94f-9ea23ce75369.PNG)
 
@@ -23,5 +23,5 @@ Additionally, I created a bubble chart to display each sample for the selected i
 
 Sources
 
-The data used in this project was collected by the Public Science Lab, Department of Applied Ecology at North Carolina State University. The dataset can be accessed and viewed here.
+The data used in this project was collected by the Public Science Lab, Department of Applied Ecology at North Carolina State University. The dataset can be accessed and viewed here: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
 
